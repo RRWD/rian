@@ -1,0 +1,3 @@
+[08-May-2016 05:17:56 CST6CDT] PHP Fatal error:  Call to undefined function add_filter() in /home/rianriet/public_html/wp-content/themes/rian/lib/theme-defaults.php on line 4
+[08-May-2016 05:17:56 CST6CDT] PHP Fatal error:  Call to undefined function add_action() in /home/rianriet/public_html/wp-content/themes/rian/lib/output.php on line 6
+[08-May-2016 05:17:56 CST6CDT] PHP Fatal error:  Class 'WP_Customize_Image_Control' not found in /home/rianriet/public_html/wp-content/themes/rian/lib/customize.php on line 10
