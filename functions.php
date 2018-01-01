@@ -91,17 +91,7 @@ function rian_genesis_attr_content( $attributes ) {
 
 add_action ( 'genesis_header', 'rian_skip_links', 5);
 function rian_skip_links() {
-	?>
-	<section>
-	<h2 class="screen-reader-text">Quickly to</h2>
-		<ul>
-
-			<li><a href="#rian-content" class="screen-reader-text button">Jump to content</a></li>
-		</ul>
-	</section>
-
-	<?php
-
+	?><a href="#rian-content" class="screen-reader-text button">Jump to content</a><?php
 }
 
 //* Unregister layout settings
