@@ -73,14 +73,6 @@ function rian_disable_wp_emojicons() {
 
 }
 
-//* Reposition the primary navigation menu
-remove_action( 'genesis_after_header', 'genesis_do_nav' );
-add_action( 'genesis_before_content_sidebar_wrap', 'genesis_do_nav' );
-
-//* Reposition the secondary navigation menu
-remove_action( 'genesis_after_header', 'genesis_do_subnav' );
-add_action( 'genesis_footer', 'genesis_do_subnav', 7 );
-
 //* add id to the content div for skip links
 add_filter( 'genesis_attr_content', 'rian_genesis_attr_content' );
 function rian_genesis_attr_content( $attributes ) {
@@ -91,7 +83,7 @@ function rian_genesis_attr_content( $attributes ) {
 
 add_action ( 'genesis_header', 'rian_skip_links', 5);
 function rian_skip_links() {
-	?><a href="#rian-content" class="screen-reader-text button">Jump to content</a><?php
+	?><a href="#rian-content" class="screen-reader-text button">Spring direct naar de inhoud</a><?php
 }
 
 //* Unregister layout settings
@@ -142,14 +134,8 @@ function parallax_comments_gravatar( $args ) {
 add_filter( 'genesis_footer_creds_text', 'rrwd_footer_creds_text' );
 function rrwd_footer_creds_text() {
 
-	echo "<p>WordPress Accessible? Let's do this!</p>";
+	echo '<p>Een toegankelijke WordPress website? We gaan ervoor!</p>';
 }
-
-//* Add support for 3-column footer widgets
-add_theme_support( 'genesis-footer-widgets', 1 );
-
-//* Add support for after entry widget
-add_theme_support( 'genesis-after-entry-widget-area' );
 
 //* Relocate after entry widget
 remove_action( 'genesis_after_entry', 'genesis_after_entry_widget_area' );

@@ -22,7 +22,7 @@ HTML5 Reset
 	normalize.css v2.1.3 | MIT License | git.io/normalize
 --------------------------------------------- */
 
-article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:solid 1px}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:solid 1px}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
 /* Box Sizing
 --------------------------------------------- */
@@ -86,11 +86,10 @@ html {
 body > div { font-size: 2.2rem; }
 
 body {
-	background-color: #fff;
-	color: #000;
+	background-color: #f5f5f5;
+	color: #222;
 	font-family: Georgia, serif;
-	font-size: 22px;
-	font-size: 2.2rem;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
@@ -109,23 +108,12 @@ textarea:focus,
 .button {
 	-webkit-transition: all 0.1s ease-in-out;
 	-moz-transition:    all 0.1s ease-in-out;
-	-ms-transition:     all 0.1s ease-in-out;
 	-o-transition:      all 0.1s ease-in-out;
 	transition:         all 0.1s ease-in-out;
 }
 
-::-moz-selection {
-	background-color: #000;
-	color: #fff;
-}
-
-::selection {
-	background-color: #000;
-	color: #fff;
-}
-
 a {
-	color: #000;
+	color: #222;
 	text-decoration: none;
 }
 
@@ -163,7 +151,7 @@ i {
 }
 
 blockquote {
-	color: #000;
+	color: #222;
 	margin: 40px;
 }
 
@@ -171,7 +159,6 @@ blockquote::before {
 	content: "\201C";
 	display: block;
 	font-size: 30px;
-	font-size: 3rem;
 	height: 0;
 	left: -20px;
 	position: relative;
@@ -187,42 +174,12 @@ h3,
 h4,
 h5,
 h6 {
-	color: #000;
+	color: #222;
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
-	line-height: 1.2;
-	margin: 0 0 20px;
 }
 
-h1 {
-	font-size: 36px;
-	font-size: 3.6rem;
-}
-
-h2 {
-	font-size: 30px;
-	font-size: 3rem;
-}
-
-h3 {
-	font-size: 24px;
-	font-size: 2.4rem;
-}
-
-h4 {
-	font-size: 22px;
-	font-size: 2.2rem;
-}
-
-h5 {
-	font-size: 18px;
-	font-size: 1.8rem;
-}
-
-h6 {
-	font-size: 14px;
-	font-size: 1.4rem;
-}
+h1
 
 /* Objects
 --------------------------------------------- */
@@ -263,9 +220,9 @@ img {
 input,
 select,
 textarea {
-	background-color: #fff;
+	background-color: #f5f5f5;
 	border: 1px solid #ddd;
-	color: #000;
+	color: #222;
 	font-size: 20px;
 	font-size: 2.0rem;
 	font-weight: 400;
@@ -285,17 +242,6 @@ input[type="radio"] {
 	width: auto;
 }
 
-::-moz-placeholder {
-	color: #000;
-	opacity: 1;
-	font-weight: 400;
-}
-
-::-webkit-input-placeholder {
-	color: #000;
-	font-weight: 400;
-}
-
 button,
 input[type="button"],
 input[type="reset"],
@@ -306,12 +252,11 @@ input[type="submit"],
 	color: #fff;
 	cursor: pointer;
 	font-family: Montserrat, sans-serif;
-	font-size: 18px;
-	font-size: 1.8rem;
+	font-size: 20px;
+	font-size: 2rem;
 	font-weight: 400;
 	letter-spacing: 1px;
 	padding: 20px;
-	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -320,8 +265,8 @@ input:hover[type="button"],
 input:hover[type="reset"],
 input:hover[type="submit"],
 .button:hover {
-	background-color: #000;
-	color: #fff;
+	background-color: #222;
+	color: #f5f5f5;
 }
 
 button:focus,
@@ -329,19 +274,13 @@ input:focus[type="button"],
 input:focus[type="reset"],
 input:focus[type="submit"],
 .button:focus {
-	background-color: #000;
-	color: #fff;
+	background-color: #222;
+	color: #f5f5f5;
 }
 
 .button {
 	display: inline-block;
 }
-
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button {
-	display: none;
-}
-
 
 /*
 Structure and Layout
@@ -525,25 +464,16 @@ Common Classes
 --------------------------------------------- */
 
 .archive-title {
-	font-size: 24px;
-	font-size: 2.4rem;
 	line-height: 1;
 	margin-bottom: 20px;
 }
 
-.entry-title {
-	font-size: 36px;
-	font-size: 3.6rem;
-}
-
 .sidebar .entry-title {
-	font-size: 24px;
-	font-size: 2.4rem;
 	text-align: left;
 }
 
 .entry-title a {
-	color: #000;
+	color: #222;
 }
 
 .entry-title a:hover,
@@ -552,23 +482,14 @@ Common Classes
 }
 
 .widget-title {
-	font-size: 24px;
-	font-size: 2.4rem;
 	font-weight: 400;
 	margin-bottom: 20px;
 }
 
-.footer-widgets .widget-title {
-	color: #fff;
-	font-size: 48px;
-	font-size: 4.8rem;
-}
-
 .home-even .widget-title,
 .home-odd .widget-title {
-	font-size: 72px;
-	font-size: 7.2rem;
-	margin-bottom: 40px;
+	font-size: 50px;
+	font-size: 5rem;
 }
 
 /* WordPress
@@ -637,24 +558,20 @@ img.alignright,
 	margin: 0;
 }
 
-.rian-skip-link li {
-	height: 0;
-	width: 0;
-	list-style: none;
-}
-
 /* ## Screen reader text
 --------------------------------------------- */
 
 .screen-reader-text,
 .screen-reader-text span,
-.screen-reader-shortcut {
+.screen-reader-shortcut,
+.site-description {
 	position: absolute !important;
 	clip: rect(0, 0, 0, 0);
 	height: 1px;
 	width: 1px;
 	border: 0;
 	overflow: hidden;
+	word-wrap: normal;
 }
 
 .screen-reader-text:focus,
@@ -668,7 +585,7 @@ img.alignright,
 	font-size: 1em;
 	font-weight: bold;
 	padding: 15px 23px 14px;
-	color: #333;
+	color: #222;
 	background: #fff;
 	z-index: 100000; /* Above WP toolbar. */
 	text-decoration: none;
@@ -678,8 +595,6 @@ img.alignright,
 .more-link {
     position: relative;
 }
-
-
 
 
 /*
@@ -702,16 +617,6 @@ Widgets
 	margin: 0 0 0 30px;
 	padding: 0;
 }
-
-.widget_calendar table {
-	width: 100%;
-}
-
-.widget_calendar td,
-.widget_calendar th {
-	text-align: center;
-}
-
 
 /*
 Site Header
@@ -736,7 +641,7 @@ Site Header
 .title-area {
 	float: left;
 	padding: 20px 0;
-	width: 360px;
+	width: 410px;
 }
 
 .header-full-width .title-area {
@@ -750,8 +655,7 @@ Site Header
 	font-weight: 400;
 	letter-spacing: 1px;
 	line-height: 1;
-	margin-bottom: 0;
-	text-transform: uppercase;
+	margin: 0;
 	color: #fff
 }
 
@@ -763,24 +667,8 @@ Site Header
 	text-decoration: underline;
 }
 
-
 .header-image .title-area {
 	padding: 0;
-}
-
-.header-image .site-title > a {
-	background-size: contain !important;
-	display: block;
-	height: 70px;
-	text-indent: -9999px;
-	max-width: 360px;
-}
-
-.site-description {
-	display: block;
-	height: 0;
-	margin-bottom: 0;
-	text-indent: -9999px;
 }
 
 /* Widget Area
@@ -789,7 +677,7 @@ Site Header
 .site-header .widget-area {
 	float: right;
 	text-align: right;
-	width: 740px;
+	width: 690px;
 }
 
 .site-header .widget-area,
@@ -840,8 +728,8 @@ Site Navigation
 }
 
 .genesis-nav-menu a:hover,
-.genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu a:focus, {
+.genesis-nav-menu .current-menu-item a > span,
+.genesis-nav-menu a:focus {
 	text-decoration: underline;
 }
 
@@ -898,10 +786,8 @@ Content Area
 .home-even,
 .home-odd {
 	clear: both;
-	font-size: 28px;
-	font-size: 2.8rem;
 	overflow: hidden;
-	padding: 190px 0 200px;
+	padding: 40px 0 40px;
 	text-align: center;
 }
 
@@ -958,6 +844,7 @@ Content Area
 .home-section-5 {
 	background-attachment: fixed;
 	background-color: #000;
+	color: #f5f5f5;
 	background-position: 50% 0px;
 	background-repeat: no-repeat;
 	-webkit-background-size: cover;
@@ -975,12 +862,11 @@ Content Area
 
 .pricing-table h3 {
     border-bottom: 2px solid #000;
-    color: #000;
+    color: #222;
     margin: -40px -40px 40px;
     padding: 40px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
@@ -1018,7 +904,7 @@ Content Area
 
 .pricing-table ul li {
     border-bottom: 1px dotted #ddd;
-    color: #000;
+    color: #222;
     padding-bottom: 10px;
     margin-bottom: 15px;
 }
@@ -1060,6 +946,20 @@ Content Area
 	padding: 0;
 }
 
+.cta-button {
+	text-align: center;
+	padding: 50px 0;
+}
+
+.entry-content .cta-button a {
+	 text-decoration: none;
+}
+
+.entry-content .cta-button a:focus,
+.entry-content .cta-button a:hover {
+	text-decoration: underline;
+}
+
 /* Entries
 --------------------------------------------- */
 
@@ -1097,7 +997,7 @@ Content Area
 }
 
 .entry-content a {
-	text-decoration: underline;
+	text-decoration: underline #707070;;
 }
 
 .entry-content a:hover,
@@ -1206,7 +1106,6 @@ p.entry-meta {
 	font-size: 1.4rem;
 	letter-spacing: 1px;
 	padding: 8px 12px;
-	text-transform: uppercase;
 }
 
 .archive-pagination li a:hover,
@@ -1274,11 +1173,10 @@ Site Footer
 .site-footer p {
 	font-family: Montserrat, sans-serif;
 	color: #fff;
-	font-size: 12px;
-	font-size: 1.2rem;
+	font-size: 20px;
+	font-size: 2rem;
 	letter-spacing: 1px;
 	margin-bottom: 0;
-	text-transform: uppercase;
 }
 
 /*

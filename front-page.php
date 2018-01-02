@@ -16,26 +16,15 @@ function parallax_home_genesis_meta() {
 
 	if ( is_active_sidebar( 'home-section-1' ) || is_active_sidebar( 'home-section-2' ) || is_active_sidebar( 'home-section-3' ) || is_active_sidebar( 'home-section-4' ) || is_active_sidebar( 'home-section-5' ) ) {
 
-		//* Enqueue parallax script
-		add_action( 'wp_enqueue_scripts', 'parallax_enqueue_parallax_script' );
-		function parallax_enqueue_parallax_script() {
 
-			if ( ! wp_is_mobile() ) {
-
-				wp_enqueue_script( 'parallax-script', get_bloginfo( 'stylesheet_directory' ) . '/js/parallax.js', array( 'jquery' ), '1.0.0' );
-
-			}
-
-		
-		}
 
 		//* Add parallax-home body class
 		add_filter( 'body_class', 'parallax_body_class' );
 		function parallax_body_class( $classes ) {
-		
+
    			$classes[] = 'parallax-home';
   			return $classes;
-  			
+
 		}
 
 		//* Force full width content layout
@@ -60,7 +49,7 @@ function parallax_home_genesis_meta() {
 function parallax_homepage_widgets() {
 
 	genesis_widget_area( 'home-section-1', array(
-		'before' => '<div class="home-odd home-section-1 widget-area"><div class="wrap">',
+		'before' => '<div class="home-even home-section-2 widget-area"><div class="wrap">',
 		'after'  => '</div></div>',
 	) );
 

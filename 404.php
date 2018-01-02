@@ -24,10 +24,10 @@ function genesis_404() {
 
 	?><article class="entry">
 
-		<h1 class="entry-title">Oh no! This page is missing!</h1>
+		<h1 class="entry-title">Oeps, er gaat iets mis!</h1>
 		<div class="entry-content">
-			<p>The page you are looking for doesn't exist.<br>
-			In the sitemap below  there is a list with all pages in this site.</p>
+			<p>De pagina die u wilt zien bestaat (niet) meer!<br>
+			In het overzicht hieronder staan alle pagina's op deze website.</p>
 
 			<h2>Sitemap</h2>
 			<ul>
